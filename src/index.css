@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Inter:wght@400;500&family=JetBrains+Mono:wght@400;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ───── CSS custom properties ───── */
+:root {
+  --color-a: #F4A5A5;
+  --color-c: #A5D4F4;
+  --color-g: #A5F4B8;
+  --color-t: #D4A5F4;
+
+  --color-primary:    #6B7FD4;
+  --color-secondary:  #A5D4F4;
+  --color-accent:     #F4A5A5;
+  --color-background: #F8F7FF;
+  --color-surface:    #FFFFFF;
+  --color-text:       #1E293B;
+}
+
+/* ───── Base styles ───── */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins', 'Inter', sans-serif;
+  background-color: #F8F7FF;
+  color: #1E293B;
+  margin: 0;
+  padding: 0;
+}
+
+/* ───── Base-coloring utility classes ───── */
+.base-A { color: #F4A5A5; }
+.base-C { color: #A5D4F4; }
+.base-G { color: #A5F4B8; }
+.base-T { color: #D4A5F4; }
+
+.bg-base-A { background-color: #F4A5A5; }
+.bg-base-C { background-color: #A5D4F4; }
+.bg-base-G { background-color: #A5F4B8; }
+.bg-base-T { background-color: #D4A5F4; }
+
+/* ───── Custom scrollbar ───── */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #F8F7FF;
+}
+::-webkit-scrollbar-thumb {
+  background: #c7cef5;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #6B7FD4;
+}
+
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #c7cef5 #F8F7FF;
+}
